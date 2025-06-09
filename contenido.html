@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación: Administración Empresarial</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#800040', // Morado
+                        secondary: '#4CAF50', // Verde
+                        background: '#000000', // Negro
+                        surface: '#1e1e1e', // Gris oscuro
+                    },
+                },
+            },
+            darkMode: 'class', // Habilita el modo oscuro basado en la clase 'dark'
+        };
+    </script>
+
+    <!-- Estilos Personalizados (Separados para Mantenibilidad) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript (Separado para Mejor Organización) -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-background text-white font-sans antialiased">
+    <div class="progress-bar fixed top-0 left-0 h-1 bg-primary z-50"></div>
+
+    <header class="bg-surface py-6 px-4 flex justify-between items-center">
+        <div class="w-20 h-20 bg-gray-700 rounded-full flex items-center justify-center overflow-hidden">
+            <img src="/api/placeholder/200/200" alt="Logo ESIME" class="w-16 h-16 object-cover">
+        </div>
+        <h1 class="text-4xl font-bold text-center bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Administración Empresarial</h1>
+        <div class="w-20 h-20 bg-gray-700 rounded-full flex items-center justify-center overflow-hidden">
+            <img src="/api/placeholder/200/200" alt="Logo IPN" class="w-16 h-16 object-cover">
+        </div>
+    </header>
+
+    <nav class="bg-black/80 backdrop-blur-md sticky top-0 z-50 transition-transform duration-300 ease-in-out">
+        <ul class="flex flex-wrap justify-center p-2 gap-4">
+            <li><a href="#introduccion" class="nav-link">Introducción</a></li>
+            <li><a href="#operaciones" class="nav-link">Operaciones</a></li>
+            <li><a href="#produccion" class="nav-link">Producción</a></li>
+            <li><a href="#rrhh" class="nav-link">RRHH</a></li>
+            <li><a href="#marketing" class="nav-link">Marketing</a></li>
+            <li><a href="#finanzas" class="nav-link">Finanzas</a></li>
+            <li><a href="#clasificacion" class="nav-link">Clasificación</a></li>
+            <li><a href="#innovacion" class="nav-link">Innovación</a></li>
+            <li><a href="#referencias" class="nav-link">Referencias</a></li>
+        </ul>
+    </nav>
+
+    <main class="max-w-6xl mx-auto p-6 space-y-24">
+        <section id="introduccion" class="slide bg-surface rounded-lg p-8 shadow-xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2 space-y-6">
+                    <h2 class="text-4xl font-bold text-primary">Introducción a la Administración Empresarial</h2>
+                    <p class="text-xl text-white/90 leading-relaxed">La administración empresarial es el proceso de planear, organizar, dirigir y controlar el uso de los recursos para lograr los objetivos organizacionales de manera eficiente y eficaz.</p>
+                    <div class="bg-black/30 p-4 rounded-lg border-l-4 border-secondary">
+                        <p class="italic text-white/80">"La administración es el arte de hacer las cosas a través de personas." - Mary Parker Follett</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/500/300" alt="Administración Empresarial" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-black/40 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Planificación</h3>
+                    <p>Definir metas, establecer estrategias y desarrollar planes para coordinar actividades.</p>
+                </div>
+                <div class="bg-black/40 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Organización</h3>
+                    <p>Estructurar las tareas, distribuir los recursos y establecer procedimientos.</p>
+                </div>
+                <div class="bg-black/40 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-secondary mb-2">Dirección</h3>
+                    <p>Motivar, liderar y comunicar con los empleados para alcanzar las metas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="operaciones" class="slide bg-surface rounded-lg p-8 shadow-xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2 space-y-6">
+                    <span class="text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">Slide 2</span>
+                    <h2 class="text-4xl font-bold text-primary">Administración de Operaciones</h2>
+                    <p class="text-xl text-white/90 leading-relaxed">La administración de operaciones se encarga de supervisar, dirigir y controlar los procesos de producción y la prestación de servicios. Es el área que transforma los insumos en productos o servicios finales.</p>
+
+                    <div class="bg-gradient-to-r from-primary/20 to-black/0 p-4 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Sistemas de Producción</h3>
+                        <ul class="list-disc ml-6 text-white/90 space-y-2">
+                            <li>Producción en masa</li>
+                            <li>Producción por lotes</li>
+                            <li>Producción a pedido</li>
+                            <li>Producción justo a tiempo (JIT)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/500/300" alt="Administración de Operaciones" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold text-secondary mb-4">Objetivos Principales</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-black/30 p-4 rounded-lg flex gap-3 items-start">
+                        <div class="text-primary text-4xl">➊</div>
+                        <div>
+                            <h4 class="text-white font-medium mb-1">Optimización de procesos</h4>
+                            <p class="text-white/70">Reducción de tiempos y costos mientras se mantiene la calidad.</p>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg flex gap-3 items-start">
+                        <div class="text-primary text-4xl">➋</div>
+                        <div>
+                            <h4 class="text-white font-medium mb-1">Gestión de la calidad</h4>
+                            <p class="text-white/70">Implementación de estándares y mejora continua.</p>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg flex gap-3 items-start">
+                        <div class="text-primary text-4xl">➌</div>
+                        <div>
+                            <h4 class="text-white font-medium mb-1">Control de inventarios</h4>
+                            <p class="text-white/70">Equilibrio entre demanda y disponibilidad de recursos.</p>
+                        </div>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg flex gap-3 items-start">
+                        <div class="text-primary text-4xl">➍</div>
+                        <div>
+                            <h4 class="text-white font-medium mb-1">Gestión de cadena de suministro</h4>
+                            <p class="text-white/70">Coordinación de proveedores, producción y distribución.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produccion" class="slide bg-surface rounded-lg p-8 shadow-xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2 space-y-6">
+                    <span class="text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">Slide 3</span>
+                    <h2 class="text-4xl font-bold text-primary">Administración de Producción</h2>
+                    <p class="text-xl text-white/90 leading-relaxed">La administración de producción se enfoca en la transformación de recursos en productos y servicios finales. Es la columna vertebral de cualquier empresa industrial.</p>
+
+                    <div class="bg-gradient-to-r from-primary/20 to-black/0 p-4 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Ciclo de Producción</h3>
+                        <ol class="list-decimal ml-6 text-white/90 space-y-2">
+                            <li>Planificación de la demanda</li>
+                            <li>Diseño y desarrollo del producto</li>
+                            <li>Adquisición de materias primas</li>
+                            <li>Transformación de recursos</li>
+                            <li>Control de calidad</li>
+                            <li>Distribución del producto final</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/500/300" alt="Administración de Producción" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold text-secondary mb-4">Herramientas y Metodologías</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Lean Manufacturing</h4>
+                        <p class="text-white/70">Filosofía que busca minimizar desperdicios manteniendo la calidad.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Six Sigma</h4>
+                        <p class="text-white/70">Metodología de mejora de procesos que reduce la variabilidad.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Kanban</h4>
+                        <p class="text-white/70">Sistema visual que controla el flujo de producción.</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 bg-gradient-to-r from-secondary/20 to-black/0 p-4 rounded-lg">
+                    <h4 class="text-xl font-medium text-secondary mb-2">Indicadores Clave de Desempeño (KPIs)</h4>
+                    <ul class="grid grid-cols-2 gap-2 text-white/90">
+                        <li>• Eficiencia global de equipos (OEE)</li>
+                        <li>• Tiempo de ciclo</li>
+                        <li>• Tasa de rendimiento</li>
+                        <li>• Índice de calidad</li>
+                        <li>• Tiempo medio entre fallos</li>
+                        <li>• Rotación de inventario</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="rrhh" class="slide bg-surface rounded-lg p-8 shadow-xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2 space-y-6">
+                    <span class="text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">Slide 4</span>
+                    <h2 class="text-4xl font-bold text-primary">Administración de Recursos Humanos</h2>
+                    <p class="text-xl text-white/90 leading-relaxed">La gestión de recursos humanos se encarga de atraer, desarrollar y mantener una fuerza laboral eficiente. Es el área que conecta la estrategia empresarial con el talento humano.</p>
+
+                    <div class="bg-gradient-to-r from-primary/20 to-black/0 p-4 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Proceso de Gestión del Talento</h3>
+                        <ul class="list-disc ml-6 text-white/90 space-y-2">
+                            <li>Planificación estratégica de la fuerza laboral</li>
+                            <li>Reclutamiento y selección</li>
+                            <li>Inducción y capacitación</li>
+                            <li>Gestión del desempeño</li>
+                            <li>Desarrollo de carrera</li>
+                            <li>Retención del talento</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/500/300" alt="Administración de RRHH" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold text-secondary mb-4">Tendencias Actuales en RRHH</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Employee Experience</h4>
+                        <p class="text-white/70">Diseño integral de la experiencia del colaborador desde su llegada hasta su salida.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Work-Life Balance</h4>
+                        <p class="text-white/70">Equilibrio entre vida personal y profesional como prioridad organizacional.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Upskilling & Reskilling</h4>
+                        <p class="text-white/70">Actualización y desarrollo continuo de competencias para la era digital.</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 bg-black/20 rounded-lg">
+                    <h4 class="text-xl font-medium text-white mb-2">Beneficios de una gestión efectiva de RRHH</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-start gap-2">
+                            <div class="text-secondary text-xl">✓</div>
+                            <p>Mayor compromiso y satisfacción laboral</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="text-secondary text-xl">✓</div>
+                            <p>Reducción de rotación de personal</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="text-secondary text-xl">✓</div>
+                            <p>Incremento en productividad</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="text-secondary text-xl">✓</div>
+                            <p>Mejora del clima organizacional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="marketing" class="slide bg-surface rounded-lg p-8 shadow-xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2 space-y-6">
+                    <span class="text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">Slide 5</span>
+                    <h2 class="text-4xl font-bold text-primary">Administración de Marketing</h2>
+                    <p class="text-xl text-white/90 leading-relaxed">El marketing empresarial se enfoca en identificar, anticipar y satisfacer las necesidades del cliente de manera rentable. Conecta a la empresa con su mercado objetivo.</p>
+
+                    <div class="bg-gradient-to-r from-primary/20 to-black/0 p-4 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Las 4P del Marketing</h3>
+                        <ul class="text-white/90 space-y-3">
+                            <li class="flex items-start gap-2">
+                                <span class="font-bold text-secondary">Producto:</span>
+                                <span>Desarrollo, diferenciación y ciclo de vida</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="font-bold text-secondary">Precio:</span>
+                                <span>Estrategias, psicología y posicionamiento</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="font-bold text-secondary">Plaza:</span>
+                                <span>Canales de distribución y logística</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="font-bold text-secondary">Promoción:</span>
+                                <span>Publicidad, relaciones públicas y ventas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/500/300" alt="Administración de Marketing" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold text-secondary mb-4">Marketing Digital</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">SEO & SEM</h4>
+                        <p class="text-white/70">Optimización y publicidad en motores de búsqueda para incrementar visibilidad.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Social Media</h4>
+                        <p class="text-white/70">Estrategias en redes sociales para engagement y construcción de comunidad.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Email Marketing</h4>
+                        <p class="text-white/70">Comunicación directa y personalizada con prospectos y clientes.</p>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Content Marketing</h4>
+                        <p class="text-white/70">Creación y distribución de contenido relevante para atraer audiencia.</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 bg-gradient-to-r from-secondary/20 to-black/0 rounded-lg">
+                    <h4 class="text-xl font-medium text-white mb-2">Métricas Clave en Marketing</h4>
+                    <div class="grid grid-cols-2 gap-2 text-white/90">
+                        <div class="flex items-center gap-2">
+                            <span class="text-secondary">▪</span>
+                            <span>Retorno de inversión (ROI)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-secondary">▪</span>
+                            <span>Costo de adquisición de cliente (CAC)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-secondary">▪</span>
+                            <span>Valor del tiempo de vida del cliente (CLV)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-secondary">▪</span>
+                            <span>Tasa de conversión</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="finanzas" class="slide bg-surface rounded-lg p-8 shadow-xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2 space-y-6">
+                    <span class="text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">Slide 6</span>
+                    <h2 class="text-4xl font-bold text-primary">Administración Financiera</h2>
+                    <p class="text-xl text-white/90 leading-relaxed">La gestión financiera se encarga de planificar, organizar, dirigir y controlar los recursos financieros para maximizar el valor de la empresa y garantizar su sostenibilidad.</p>
+
+                    <div class="bg-gradient-to-r from-primary/20 to-black/0 p-4 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Áreas Principales</h3>
+                        <ul class="list-disc ml-6 text-white/90 space-y-2">
+                            <li>Contabilidad financiera y gerencial</li>
+                            <li>Presupuestación y control financiero</li>
+                            <li>Gestión de inversiones</li>
+                            <li>Financiamiento empresarial</li>
+                            <li>Administración del capital de trabajo</li>
+                            <li>Gestión de riesgos financieros</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/500/300" alt="Administración Financiera" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold text-secondary mb-4">Indicadores Financieros Clave</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Rentabilidad</h4>
+                        <ul class="text-white/70 space-y-1">
+                            <li>• ROI (Retorno sobre Inversión)</li>
+                            <li>• ROE (Retorno sobre Capital)</li>
+                            <li>• ROA (Retorno sobre Activos)</li>
+                            <li>• Margen EBITDA</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Liquidez</h4>
+                        <ul class="text-white/70 space-y-1">
+                            <li>• Ratio corriente</li>
+                            <li>• Prueba ácida</li>
+                            <li>• Capital de trabajo neto</li>
+                            <li>• Ciclo de conversión de efectivo</li>
+                        </ul>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg">
+                        <h4 class="text-xl font-medium text-primary mb-2">Solvencia</h4>
+                        <ul class="text-white/70 space-y-1">
+                            <li>• Ratio de endeudamiento</li>
+                            <li>• Cobertura de intereses</li>
+                            <li>• Apalancamiento financiero</li>
+                            <li>• Estructura de capital</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 bg-black/20 rounded-lg">
+                    <h4 class="text-xl font-medium text-white mb-2">Principios de Gestión Financiera Efectiva</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-start gap-2">
+                            <div class="text-secondary text-xl">✓</div>
+                            <p>Maximización del valor para los accionistas</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="text-secondary text-xl">✓</div>
+                            <p>Equilibrio entre riesgo y rentabilidad</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="text-secondary text-xl">✓</div>
+                            <p>Transparencia y compliance financiero</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="text-secondary text-xl">✓</div>
+                            <p>Sostenibilidad financiera a largo plazo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clasificacion" class="slide bg-surface rounded-lg p-8 shadow-xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2 space-y-6">
+                    <span class="text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">Slide 7</span>
+                    <h2 class="text-4xl font-bold text-primary">Clasificación de Empresas</h2>
+                    <p class="text-xl text-white/90 leading-relaxed">Las empresas se pueden clasificar según diversos criterios que permiten entender su estructura, funcionamiento y características particulares.</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/500/300" alt="Clasificación de Empresas" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-black/30 p-5 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-primary mb-3 pb-2 border-b border-primary/30">Por su Tamaño</h3>
+                    <ul class="space-y-3 text-white/90">
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Microempresas</h4>
+                                <p class="text-sm text-white/70">Hasta 10 empleados y ventas anuales limitadas.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Pequeñas empresas</h4>
+                                <p class="text-sm text-white/70">Entre 11-50 empleados y ventas moderadas.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Medianas empresas</h4>
+                                <p class="text-sm text-white/70">Entre 51-250 empleados y ventas considerables.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Grandes empresas</h4>
+                                <p class="text-sm text-white/70">Más de 250 empleados y grandes volúmenes de ventas.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-black/30 p-5 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-primary mb-3 pb-2 border-b border-primary/30">Por su Actividad Económica</h3>
+                    <ul class="space-y-3 text-white/90">
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Empresas industriales</h4>
+                                <p class="text-sm text-white/70">Transforman materias primas en productos terminados.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Empresas comerciales</h4>
+                                <p class="text-sm text-white/70">Compran y venden productos sin transformación.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Empresas de servicios</h4>
+                                <p class="text-sm text-white/70">Ofrecen intangibles para satisfacer necesidades.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Empresas agropecuarias</h4>
+                                <p class="text-sm text-white/70">Dedicadas a actividades agrícolas y ganaderas.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-black/30 p-5 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-primary mb-3 pb-2 border-b border-primary/30">Por su Origen de Capital</h3>
+                    <ul class="space-y-3 text-white/90">
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Empresas públicas</h4>
+                                <p class="text-sm text-white/70">Capital proveniente del Estado.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Empresas privadas</h4>
+                                <p class="text-sm text-white/70">Capital aportado por particulares.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Empresas mixtas</h4>
+                                <p class="text-sm text-white/70">Combinación de capital público y privado.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-secondary">▸</span>
+                            <div>
+                                <h4 class="font-medium">Multinacionales</h4>
+                                <p class="text-sm text-white/70">Operan en varios países con capital internacional.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-6 p-4 bg-gradient-to-r from-primary/20 to-black/0 rounded-lg">
+                <h4 class="text-xl font-medium text-white mb-2">Otros Criterios de Clasificación</h4>
+                <div class="grid grid-cols-2 gap-4 text-white/90">
+                    <div class="flex items-start gap-2">
+                        <span class="text-secondary font-bold">•</span>
+                        <p>Por su forma jurídica: S.A., S.R.L., Cooperativas, etc.</p>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-secondary font-bold">•</span>
+                        <p>Por su ámbito geográfico: Locales, regionales, nacionales, internacionales</p>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-secondary font-bold">•</span>
+                        <p>Por su finalidad: Con ánimo de lucro, sin ánimo de lucro</p>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <span class="text-secondary font-bold">•</span>
+                        <p>Por su grado de integración: Holding, matriz-filial, independientes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="innovacion" class="slide bg-surface rounded-lg p-8 shadow-xl">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2 space-y-6">
+                    <span class="text-sm bg-primary/20 text-primary px-3 py-1 rounded-full">Slide 8</span>
+                    <h2 class="text-4xl font-bold text-primary">Innovación y Transformación Digital</h2>
+                    <p class="text-xl text-white/90 leading-relaxed">La innovación y transformación digital son fundamentales para la supervivencia y competitividad de las empresas en la era moderna.</p>
+
+                    <div class="bg-gradient-to-r from-primary/20 to-black/0 p-4 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Pilares de la Transformación Digital</h3>
+                        <ul class="list-disc ml-6 text-white/90 space-y-2">
+                            <li>Cultura organizacional orientada a la innovación</li>
+                            <li>Implementación de tecnologías disruptivas</li>
+                            <li>Enfoque centrado en el cliente digital</li>
+                            <li>Optimización de procesos mediante automatización</li>
+                            <li>Desarrollo de nuevos modelos de negocio</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/500/300" alt="Innovación y Transformación Digital" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold text-secondary mb-4">Tecnologías Emergentes en la Empresa</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="bg-black/30 p-4 rounded-lg h-full flex flex-col">
+                        <h4 class="text-xl font-medium text-primary mb-2">Inteligencia Artificial</h4>
+                        <p class="text-white/70 flex-grow">Automatización de tareas complejas, análisis predictivo y asistentes virtuales.</p>
+                        <div class="mt-2 text-sm text-secondary">Impacto: Alto</div>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg h-full flex flex-col">
+                        <h4 class="text-xl font-medium text-primary mb-2">Blockchain</h4>
+                        <p class="text-white/70 flex-grow">Trazabilidad, contratos inteligentes y gestión segura de transacciones.</p>
+                        <div class="mt-2 text-sm text-secondary">Impacto: Medio-Alto</div>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg h-full flex flex-col">
+                        <h4 class="text-xl font-medium text-primary mb-2">IoT</h4>
+                        <p class="text-white/70 flex-grow">Dispositivos conectados, monitoreo en tiempo real y optimización operativa.</p>
+                        <div class="mt-2 text-sm text-secondary">Impacto: Alto</div>
+                    </div>
+                    <div class="bg-black/30 p-4 rounded-lg h-full flex flex-col">
+                        <h4 class="text-xl font-medium text-primary mb-2">Cloud Computing</h4>
+                        <p class="text-white/70 flex-grow">Flexibilidad, colaboración remota y reducción de costos operativos.</p>
+                        <div class="mt-2 text-sm text-secondary">Impacto: Muy Alto</div>
+                    </div>
+                </div>
+
+                <div class="mt-6 bg-black/20 p-4 rounded-lg">
+                    <h4 class="text-xl font-medium text-white mb-2">Metodologías Ágiles para la Innovación</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="flex items-start gap-2">
+                            <div class="text-primary font-bold">01</div>
+                            <div>
+                                <h5 class="font-medium">Design Thinking</h5>
+                                <p class="text-sm text-white/70">Enfoque centrado en el usuario para la resolución creativa de problemas.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="text-primary font-bold">02</div>
+                            <div>
+                                <h5 class="font-medium">Lean Startup</h5>
+                                <p class="text-sm text-white/70">Experimentación rápida e iterativa para validar ideas de negocio.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <div class="text-primary font-bold">03</div>
+                            <div>
+                                <h5 class="font-medium">Scrum</h5>
+                                <p class="text-sm text-white/70">Marco de trabajo para el desarrollo incremental de proyectos complejos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="referencias" class="slide bg-surface rounded-lg p-8 shadow-xl">
+            <h2 class="text-4xl font-bold text-primary mb-6 text-center">Referencias Bibliográficas</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-secondary mb-4">Libros Fundamentales</h3>
+                    <ul class="space-y-4">
+                        <li class="bg-black/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <div class="text-primary text-3xl">📚</div>
+                                <div>
+                                    <h4 class="font-medium">Administración de Operaciones</h4>
+                                    <p class="text-sm text-white/70">Chase, Jacobs y Aquilano</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bg-black/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <div class="text-primary text-3xl">📚</div>
+                                <div>
+                                    <h4 class="font-medium">Gestión de Recursos Humanos</h4>
+                                    <p class="text-sm text-white/70">Dessler, 16ª Edición</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bg-black/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <div class="text-primary text-3xl">📚</div>
+                                <div>
+                                    <h4 class="font-medium">Administración de la Producción y Operaciones</h4>
+                                    <p class="text-sm text-white/70">Krajewski, Ritzman y Malhotra</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bg-black/30 p-4 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <div class="text-primary text-3xl">📚</div>
+                                <div>
+                                    <h4 class="font-medium">Fundamentos de Administración</h4>
+                                    <p class="text-sm text-white/70">Robbins y Coulter, 10ª Edición</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold text-secondary mb-4">Recursos Adicionales</h3>
+                    <div class="space-y-4">
+                        <div class="bg-black/30 p-4 rounded-lg">
+                            <h4 class="font-medium text-primary mb-2">Publicaciones Académicas</h4>
+                            <ul class="list-disc ml-6 text-white/90 space-y-2">
+                                <li>Harvard Business Review</li>
+                                <li>Journal of Operations Management</li>
+                                <li>International Journal of Production Economics</li>
+                                <li>Human Resource Management Review</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-black/30 p-4 rounded-lg">
+                            <h4 class="font-medium text-primary mb-2">Recursos Digitales</h4>
+                            <ul class="list-disc ml-6 text-white/90 space-y-2">
+                                <li>MIT Sloan Management Review (sloanreview.mit.edu)</li>
+                                <li>McKinsey Insights (mckinsey.com/insights)</li>
+                                <li>Project Management Institute (pmi.org)</li>
+                                <li>Society for Human Resource Management (shrm.org)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-primary/20 to-black/0 p-4 rounded-lg mt-4">
+                            <h4 class="font-medium text-white mb-2">Nota sobre las Referencias</h4>
+                            <p class="text-sm text-white/80">Las referencias listadas son obras fundamentales en el campo de la administración empresarial. Se recomienda consultar las ediciones más recientes para acceder a información actualizada sobre tendencias y prácticas contemporáneas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusiones" class="slide bg-surface rounded-lg p-8 shadow-xl">
+            <h2 class="text-4xl font-bold text-primary mb-6 text-center">Conclusiones</h2>
+
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2 space-y-6">
+                    <div class="bg-gradient-to-r from-primary/20 to-black/0 p-4 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-white mb-2">Importancia de la Administración Moderna</h3>
+                        <p class="text-white/90 leading-relaxed">
+                            La administración empresarial efectiva es esencial para la supervivencia y crecimiento de las organizaciones en un entorno altamente competitivo y cambiante. La integración de las diferentes áreas funcionales, junto con la adopción de tecnologías emergentes, permite a las empresas adaptarse y prosperar en la era digital.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-lg">
+                        <h3 class="text-2xl font-semibold text-secondary mb-2">Retos Futuros</h3>
+                        <ul class="list-disc ml-6 text-white/90 space-y-2">
+                            <li>Adaptación a la transformación digital acelerada</li>
+                            <li>Gestión del talento en entornos híbridos y remotos</li>
+                            <li>Desarrollo de modelos de negocio sostenibles</li>
+                            <li>Equilibrio entre innovación y gestión de riesgos</li>
+                            <li>Respuesta ágil a cambios geopolíticos y socioeconómicos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/500/300" alt="Conclusiones" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <div class="bg-black/30 p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-primary mb-4 text-center">Mensaje Final</h3>
+                    <p class="text-xl text-white/90 leading-relaxed text-center italic">
+                        "El éxito en la administración empresarial moderna no solo depende de la optimización de recursos y procesos, sino también de la capacidad para inspirar, innovar y adaptarse constantemente a un mundo en constante evolución."
+                    </p>
+                    <div class="mt-4 text-center text-white/70">– Equipo de Administración Empresarial</div>
+                </div>
+
+                <div class="mt-8 flex justify-center">
+                    <a href="#introduccion" class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/80 transition-colors duration-300">
+                        <span>Volver al Inicio</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-surface text-center p-6 mt-16">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex justify-center space-x-6 mb-4">
+                <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center overflow-hidden">
+                    <img src="/api/placeholder/100/100" alt="Logo ESIME" class="w-12 h-12 object-cover">
+                </div>
+                <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center overflow-hidden">
+                    <img src="/api/placeholder/100/100" alt="Logo IPN" class="w-12 h-12 object-cover">
+                </div>
+            </div>
+            <p class="text-white/80">© 2025 | Presentación de Administración Empresarial | ESIME - IPN</p>
+            <p class="text-white/60 mt-2 text-sm">Desarrollado como material educativo</p>
+        </div>
+    </footer>
+</body>
+
+</html>

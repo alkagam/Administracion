@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Administración - Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #800040;
+            --secondary-color: #029a4f;
+            --background-color: rgb(18, 18, 18);
+            --surface-color: rgb(30, 30, 30);
+            --text-color: rgb(255, 255, 255);
+            --accent-color: #FFD700;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #232526 0%, #121212 100%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 16px;
+            background-color: rgba(30, 30, 30, 0.7);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logos {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .school-info {
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        .school-info:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+        }
+
+        .school-info h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .school-info h2 {
+            color: var(--text-color);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .team-members {
+            background-color: var(--surface-color);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .team-members h2 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .team-members h2:after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--secondary-color);
+        }
+
+        .member-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.8rem;
+        }
+
+        .member {
+            padding: 0.8rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .member:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .member h3 {
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .start-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .start-button:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Animación de brillo para logos */
+        @keyframes glow {
+            0% { filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3)); }
+            50% { filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)); }
+            100% { filter: drop-shadow(0 0 2px rgba(255, 0, 179, 0.3)); }
+        }
+
+        .logo {
+            animation: glow 3s infinite;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+                max-width: 90%;
+            }
+
+            .school-info h1 {
+                font-size: 2rem;
+            }
+
+            .school-info h2 {
+                font-size: 1.1rem;
+            }
+
+            .logos {
+                margin-bottom: 1.5rem;
+            }
+
+            .logo {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logos">
+            <img src="/ipn.png"" alt="Logo IPN" class="logo">
+            <img src="/esime.png" alt="Logo ESIME" class="logo">
+        </div>
+
+        <div class="school-info">
+            <h1>Instituto Politécnico Nacional</h1>
+            <h2>Escuela Superior de Ingeniería Eléctrica y Mecánica<br>Unidad Culhuacán</h2>
+        </div>
+
+        <div class="team-members">
+            <h2>Integrantes del Equipo</h2>
+            <div class="member-list">
+                <div class="member">
+                    <h3>ANZUREZ CRUZ DANYA ZOE</h3>
+                </div>
+                <div class="member">
+                    <h3>ARGUMEDO LÓPEZ KEVIN IVÁN</h3>
+                </div>
+                <div class="member">
+                    <h3>GARDUÑO FLORES TRIZTAN ISAAC</h3>
+                </div>
+                <div class="member">
+                    <h3>LÓPEZ MARTÍNEZ SAÚL ANDRAWI</h3>
+                </div>
+                <div class="member">
+                    <h3>SERRANO RODRÍGUEZ OMAR</h3>
+                </div>
+            </div>
+        </div>
+
+        <a href="contenido.html" class="start-button">Comenzar</a>
+    </div>
+
+    <script>
+        // Efecto de hover para los miembros del equipo
+        document.querySelectorAll('.member').forEach(member => {
+            member.addEventListener('mouseenter', () => {
+                member.style.backgroundColor = 'rgba(128, 0, 64, 0.2)';
+            });
+            member.addEventListener('mouseleave', () => {
+                member.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
+            });
+        });
+    </script>
+</body>
+</html>
